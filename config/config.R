@@ -24,24 +24,3 @@ cfg <- list(
     wt_list = c("S687A"), mt_list = c("S687B"), prefix_list  = c("b73")
   )
 )
-
-# loop over the samples and run
-results <- list()
-for (s in names(cfg)) {
-  vcf_dir <- cfg[[s]]$vcf_dir
-  wt_list <- cfg[[s]]$wt_list
-  mt_list <- cfg[[s]]$mt_list
-  prefix_list <- cfg[[s]]$prefix_list
-  
-  message("\n=== Running ", s, " ===")
-  cat("\nRunning:", s, "\n",
-      "vcf_dir:", vcf_dir, "\n",
-      "WT:", paste(wt_list, collapse=", "), "\n",
-      "MT:", paste(mt_list, collapse=", "), "\n")
-  # run
-  args <- c(list(
-    vcf_dir = vcf_dir, wt_list = wt_list, mt_list = mt_list, 
-    prefix_list = prefix_list), common_args)
-  
-  results[[s]] <- do.call(run_bsa_all, args)
-}
