@@ -20,5 +20,6 @@ Install_packages(packages)
 
 source("R/01_read_and_compute.R")
 source("R/02_plot_function.R")
+source("R/03_visualize_peaks.R")
 
 message("BSA-Seq environment ready.")
