@@ -38,13 +38,13 @@ Install_packages <- function(packages) {
   message("All packages are loaded successfully.")
 }
 
-# Example usage
-packages <- c(
- "reshape2", "grid","locfit", "readxl", "BiocManager", "reshape2", "dplyr", 
- "tidyr’","zoo", "plyr", "ggplot2","GlobalOptions", "openxlsx", "stringr", 
- "data.table", "naturalsort", "rlang", "purrr", "scales"
-)
-
-Install_packages(packages)
+# # Example usage
+# packages <- c(
+#  "reshape2", "grid","locfit", "readxl", "BiocManager", "reshape2", "dplyr", 
+#  "tidyr’","zoo", "plyr", "ggplot2","GlobalOptions", "openxlsx", "stringr", 
+#  "data.table", "naturalsort", "rlang", "purrr", "scales"
+# )
+# 
+# Install_packages(packages)
 
 
