@@ -3,11 +3,11 @@ base <- "https://raw.githubusercontent.com/bzebosi/bsaseq/main/"
 # load the installer helper (note the capital I)
 source(paste0(base, "utilities/Install_packages.R"))
 
-# install/load packages (also fix the weird tidyr quote if you copy from 00_setup.R)
+# install/load packages
 packages <- c(
-  "reshape2","grid","locfit","readxl","BiocManager","dplyr","tidyr",
+  "reshape2","grid","locfit","readxl","BiocManager","dplyr",
   "zoo","plyr","ggplot2","GlobalOptions","openxlsx","stringr",
-  "data.table","naturalsort","rlang","purrr","scales","tidyverse"
+  "data.table","naturalsort","rlang","purrr","scales"
 )
 Install_packages(packages)
 
