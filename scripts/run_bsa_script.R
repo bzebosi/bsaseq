@@ -5,9 +5,10 @@ source(paste0(base, "utilities/Install_packages.R"))
 
 # install/load packages (also fix the weird tidyr quote if you copy from 00_setup.R)
 packages <- c(
-  "reshape2","grid","locfit","readxl","BiocManager","dplyr",
+  "reshape2","grid","locfit","readxl","BiocManager","dplyr","tidyr",
   "zoo","plyr","ggplot2","GlobalOptions","openxlsx","stringr",
-  "data.table","naturalsort","rlang","purrr","scales")
+  "data.table","naturalsort","rlang","purrr","scales","tidyverse"
+)
 Install_packages(packages)
 
 # load pipeline functions
