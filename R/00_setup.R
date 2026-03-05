@@ -12,7 +12,7 @@ source("utilities/install_packages.R")
 
 packages <- c(
  "reshape2", "grid","locfit", "readxl", "BiocManager", "reshape2", "dplyr", 
- "tidyr’","zoo", "plyr", "ggplot2","GlobalOptions", "openxlsx", "stringr", 
+ "tidyr","zoo", "plyr", "ggplot2","GlobalOptions", "openxlsx", "stringr", 
  "data.table", "naturalsort", "rlang", "purrr", "scales"
 )
 
